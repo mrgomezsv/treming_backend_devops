@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record model="ir.ui.view" id="view_backend_tr_form">
+        <field name="name">backend.tr.form</field>
+        <field name="model">backend.tr</field>
+        <field name="arch" type="xml">
+            <form>
+                <field name="ip" />
+                <field name="cliente" />
+                <field name="plataforma" />
+                <field name="dominio" />
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="view_backend_tr_tree">
+        <field name="name">backend.tr.tree</field>
+        <field name="model">backend.tr</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="ip" />
+                <field name="cliente" />
+                <field name="plataforma" />
+                <field name="dominio" />
+            </tree>
+        </field>
+    </record>
+
+    <!-- Acción para abrir vistas de los modelos -->
+    <record model="ir.actions.act_window" id="action_backend_tr">
+        <field name="name">Backend</field>
+        <field name="res_model">backend.tr</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Menú item superior -->
+    <menuitem name="Consola Treming SH"
+        web_icon="treming_backend_devops,static/description/icon.png"
+        id="treming_backend_devops.menu_project_root" />
+
+    <!-- Categorías de menú -->
+    <menuitem name="Instancias" id="treming_backend_devops.menu_1"
+        parent="treming_backend_devops.menu_project_root" />
+
+    <!-- Acciones del menú -->
+    <menuitem name="Coche" id="treming_backend_devops.menu_car"
+        parent="treming_backend_devops.menu_1"
+        action="action_backend_tr" />
+
+
+</odoo>
