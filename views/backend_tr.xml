@@ -35,17 +35,17 @@
     </record>
 
     <!-- Menú item superior -->
-    <menuitem name="Consola Treming SH"
-        web_icon="treming_backend_devops,static/description/icon.png"
-        id="treming_backend_devops.menu_project_root" />
+    <menuitem name="Consola Backend SH"
+        web_icon="backend_devops,static/description/icon.png"
+        id="backend_devops.menu_project_root" />
 
     <!-- Categorías de menú -->
-    <menuitem name="Instancias" id="treming_backend_devops.menu_1"
-        parent="treming_backend_devops.menu_project_root" />
+    <menuitem name="Instancias" id="backend_devops.menu_1"
+        parent="backend_devops.menu_project_root" />
 
     <!-- Acciones del menú -->
-    <menuitem name="Coche" id="treming_backend_devops.menu_car"
-        parent="treming_backend_devops.menu_1"
+    <menuitem name="Coche" id="backend_devops.menu_car"
+        parent="backend_devops.menu_1"
         action="action_backend_tr" />
 
 
