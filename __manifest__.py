@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Treming Backend DevOps",
+    'name': "Backend DevOps",
     'summary': """
         Entorno Backend""",
     'description': """
         Entorno de Administracion DevOps
     """,
-    'author': "Grupo Treming",
-    'website': "https://www.treming.com",
+    'author': "Mario",
+    'website': "https://www.webforallsv.com",
     'category': 'Tools',
     'version': '0.1',
     'installable': True,
