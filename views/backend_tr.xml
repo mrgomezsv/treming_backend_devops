@@ -27,11 +27,27 @@
         </field>
     </record>
 
+    <record model="ir.ui.view" id="view_backend_tr_search">
+        <field name="name">backend.tr.search</field>
+        <field name="model">backend.tr</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="ip" />
+                <field name="cliente" />
+                <field name="plataforma" />
+                <field name="dominio" />
+                <searchpanel>
+                    <field name="production" string="PRODUCTION" enable_counters="1" />
+                </searchpanel>
+            </search>
+        </field>
+    </record>
+
     <!-- Acción para abrir vistas de los modelos -->
     <record model="ir.actions.act_window" id="action_backend_tr">
         <field name="name">Backend</field>
         <field name="res_model">backend.tr</field>
-        <field name="view_mode">tree,form</field>
+        <field name="view_mode">tree,form,search</field>
     </record>
 
     <!-- Menú item superior -->

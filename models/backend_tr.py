@@ -10,3 +10,5 @@ class BackendTr(models.Model):
     cliente = fields.Char(string='Cliente')
     plataforma = fields.Char(string='Plataforma')
     dominio = fields.Char(string='Dominio')
+
+    production = fields.Many2one('backend.category.tr', string='Produccion')
